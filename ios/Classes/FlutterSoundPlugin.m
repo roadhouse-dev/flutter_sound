@@ -425,10 +425,6 @@ NSString* status = [NSString stringWithFormat:@"{\"current_position\": \"%@\"}",
   result(@"Playing from buffer");
 }
 
-
-
-
-
 - (void)stopPlayer:(FlutterResult)result {
   if (audioPlayer) {
     if (timer != nil) {
