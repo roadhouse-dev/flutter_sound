@@ -536,7 +536,7 @@ class RecordStatus {
   final int currentPosition;
 
   RecordStatus.fromJSON(Map<String, dynamic> json)
-      : currentPosition = int.parse(json['current_position']);
+      : currentPosition = double.parse(json['current_position']).round();
 
   @override
   String toString() {
